@@ -1,0 +1,105 @@
+#projects {
+    & .projects {
+        flex-direction: column;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 60px 0;
+        &__header {
+            & h1 {
+                margin-bottom: 50px;
+            }
+        }
+        &__all {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            &:hover {
+                & .projects__image img {
+                    transform: scale(1.1);
+                }
+            }
+            @media screen and(min-width:768px) {
+                flex-direction: row;
+                height: 400px;
+                margin: 0;
+                width: 100%;
+                border-radius: 0;
+                &:nth-child(even) {
+                    flex-direction: row-reverse;
+                }
+            }
+        }
+        &__info {
+            padding: 30px;
+            flex-basis: 50%;
+            height: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+            color: white;
+            & h1 {
+                font-size: 4rem;
+                font-weight: 500;
+            }
+            & h2 {
+                font-size: 2.3rem;
+                font-weight: 500;
+                margin-top: 10px ;
+            }
+            & p {
+                color: white;
+                font-size: 1.2rem;
+            }
+            a {
+                color: white;
+                text-decoration: none;
+                &:hover {
+                    color: crimson;
+                }
+            }
+            @media screen and(min-width:768px) {
+                height: 100%;
+            }
+        }
+        &__image {
+            flex-basis: 50%;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+            &::after { 
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+                opacity: .7;
+            }
+            & img {
+                transition: .6s ease transform;
+            }
+            @media screen and(min-width:768px){
+                height: 100%;
+            }
+
+        }
+    }
+}
+
+.project_knowledges {
+    margin-left: 15px;
+}

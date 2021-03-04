@@ -1,0 +1,101 @@
+#about {
+    & .about {
+        flex-direction: column-reverse;
+        text-align: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 60px 20px;
+
+        &__col-left {
+            width: 250px;
+            height: 360px;
+            @media screen and(min-width:768px) {
+                width: 600px;
+                height: 400px;
+                padding-left: 60px;
+            }
+        } 
+
+        &__col-right {
+            width: 100%;
+
+            & h2 {
+                font-size: 1.8rem;
+                font-weight: 500px;
+                letter-spacing: .2rem;
+                margin-bottom: 10px;
+            }
+
+            & p {
+                margin-bottom: 20px;
+            }
+
+            & .cta {
+                color: black;
+                margin-bottom: 30px;
+                padding: 10px 20px;
+                font-size: 2rem;
+
+                &:hover {
+                    color: white;
+                }
+            }
+            @media screen and(min-width:768px) {
+                text-align: left;
+                padding: 30px;
+            }
+        }
+
+        &__image {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            border: 10px solid white;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: -33px;
+                top: 19px;
+                height: 98%;
+                width: 98%;
+                border: 7px solid crimson;
+                z-index: -1;
+                @media screen and(min-width:768px) {
+                    left: -45px;
+                    top: 34px;
+                    height: 98%;
+                    width: 98%;
+                    border: 10px solid crimson;
+                }
+            }
+        }
+        @media screen and(min-width:768px) {
+            flex-direction: row;
+        }
+    }
+    @media screen and(min-width:768px) {
+        & h1 {
+            text-align: left;
+            font-size: 5.5rem;
+        }
+    } 
+}
+span.about_highlight {
+    font-weight: bold;
+}
+@media screen and(min-width:768px) {
+    .info_details {
+        display: flex;
+        flex-direction: row;
+
+        .info_left {
+            flex-basis: 60%;
+        }
+        .info_right {
+            flex-basis: 30%;
+            margin-left: 100px;
+        }
+
+    }
+}

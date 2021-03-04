@@ -1,0 +1,95 @@
+#services {
+    & .services {
+        flex-direction: column;
+        text-align: center;
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 60px 0;
+        &__top {
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+
+            & p {
+                font-size: 1.7rem;
+                margin-top: 5px;
+                line-height: 2rem;
+                font-weight: 300;
+                letter-spacing: .05rem;
+            }
+        }
+        &__bottom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            & .icon {
+                height: 70px;
+                width: 70px;
+                margin-bottom: 20px;
+                color: white;
+                & img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+        }
+        &__item {
+            flex-basis: 80%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: row;
+            padding: 30px;
+            border-radius: 10px;
+            background-image: url(./assets/images/servicesBG.jpeg);
+            background-size: cover;
+            margin: 10px 5%;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top:0;
+                height: 100%;
+                width: 100%;
+                background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+                opacity: .9;
+                z-index: -1;
+            }
+            & h3 {
+                font-size: 1.5rem;
+                color: white;
+                margin-bottom: 10x;
+                text-transform: uppercase;
+            }
+            & p {
+                color: white;
+                text-align: left;
+                font-size: 1.3rem;
+                line-height: 1.9rem;
+            }
+            @media screen and(min-width:768px) {
+                flex-basis: 45%;
+                margin: 2.5%;
+            }
+        }
+    }
+    @media screen and(min-width:1200px) {
+        & .services__item {
+            flex-basis: 45%;
+            margin: 1%;
+        }
+    }
+ 
+}
+
+.services__item {
+    .skills {
+        margin-left: 5px ;
+    }
+}
