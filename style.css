@@ -153,7 +153,7 @@
 }
 
 #services .services__top {
-  width: 500px;
+  width: 400px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -998,7 +998,8 @@ span.about_highlight {
 }
 
 .experiences__top {
-  width: 500px;
+  width: 400px;
+  text-align: center;
   margin: 0 auto;
   padding: 20px;
 }
