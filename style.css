@@ -240,13 +240,6 @@
   text-transform: uppercase;
 }
 
-#services .services__item p {
-  color: white;
-  text-align: left;
-  font-size: 1.3rem;
-  line-height: 1.9rem;
-}
-
 @media screen and (min-width: 768px) {
   #services .services__item {
     -ms-flex-preferred-size: 45%;
@@ -265,6 +258,20 @@
 
 .services__item .skills {
   margin-left: 5px;
+}
+
+.description {
+  font-size: 1.5rem;
+  padding: 1px 2px;
+  text-align: justify;
+  margin: 0 6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .description {
+    font-size: 2rem;
+    margin: 0 3rem;
+  }
 }
 
 #projects .projects {
@@ -1092,7 +1099,7 @@ p {
 }
 
 .section__title {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 300;
   color: black;
   margin-bottom: 10px;
@@ -1107,7 +1114,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .section__title {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 
@@ -1138,5 +1145,10 @@ p {
     font-size: 2.5rem;
     padding: 20px 60px;
   }
+}
+
+.wrapper {
+  margin: 0 auto;
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */
