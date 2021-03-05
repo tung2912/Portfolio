@@ -48,7 +48,6 @@ p {
     font-size:  3rem;
     font-weight: 300;
     color: black;
-    margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-align: center;
@@ -87,8 +86,8 @@ p {
 }
 
 @media screen and(min-width:768px){
-    & {
-        font-size: 5rem;
+    .section__title {
+        margin-bottom: 10px;
     }
 }
 
